@@ -7,6 +7,7 @@
 
 :root{
     --default-font: 'Montserrat', sans-serif;
+    --title-font: 'Plus Jakarta Sans', sans-serif;
     --primary-color: #2c67f2ff;
     --primary-color-light: #62cff4ff;
     --secondary-color: #ff8531ff;
@@ -17,11 +18,22 @@
 }
 
 *{
-    font-family: var(--default-font);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: var(--light-bg-color);
+    font-family: var(--default-font);
+    background-color: var(--light-bg-color);;
+}
+section{
+    scroll-margin-top: 70px;
+}
+
+.custom-radius{
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    border-top-right-radius: 1rem;
 }

@@ -14,38 +14,51 @@
 <body>
 
     <!--navbar-->
-    <header class="shadow-sm fixed w-full absolute bg-white/0 backdrop-blur-sm z-10 max-h-[70px] ">
+    <header class="shadow-sm fixed w-full absolute bg-white/100 backdrop-blur-sm z-10 h-[71px] ">
         <nav class="flex justify-between items-center py-3 px-10 max-w-screen-xl mx-auto">
             <img class="w-22" src="img/pcawb.svg" alt="">
             <div class="flex gap-10 items-center">
-                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="">Home</a>
-                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="">Services</a>
-                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="">Projects</a>
-                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="">About_Us</a>
+                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#home">Home</a>
+                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#services">Services</a>
+                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#projects">Projects</a>
+                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#about">About_Us</a>
             </div>
-            <a class="text-xl text-white py-2 px-8 rounded-full bg-[var(--primary-color)] transition duration-300 ease-out hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl" href="">Contact_Us</a>
+            <a class="text-xl text-white py-2 px-8 rounded-full bg-[var(--primary-color)] 
+                transition duration-300 ease-out hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl" href="">
+                Contact_Us
+            </a>
         </nav>
     </header>
     <!--navbar-->
 
     <!--hero section-->
-    <main class="bg-indigo-950/90 bg-[url('img/labtop.jpg')] bg-cover h-screen bg-blend-multiply">
+    <main id="home" class="bg-indigo-950 bg-[url('img/labtop.jpg')] bg-cover h-screen bg-blend-multiply">
         <div class="h-[70px] opacity-0"></div>
         <div class="h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center gap-4 relative">
             <div class="absolute w-100 h-100 bg-[var(--decoration-color)]/30 rounded-full top-0 left-50 z-0 blur-[10rem]"></div>
-            <div class="absolute w-50 h-50 bg-[var(--decoration-color)]/70 rounded-full bottom-0 right-100 z-0 blur-[10rem] "></div>
+            <div class="absolute w-60 h-60 bg-[var(--decoration-color)]/70 rounded-full bottom-0 right-100 z-0 blur-[10rem] "></div>
 
-            <h2 class="text-xl font-medium text-indigo-100 bg-indigo-950/60 border-2 border-indigo-950 px-3 py-1 rounded-full mb-4 z-1"><i class="fa-solid fa-code"></i> Web Development Agency</h2>
+            <h2 class="text-xl font-medium text-indigo-100 bg-indigo-950/60 border-2 border-indigo-950 px-3 py-1 rounded-full mb-4 z-1">
+                <i class="fa-solid fa-code"></i> Web Development Agency
+            </h2>
             <img class="w-200 z-1" src="img/pcawordbbb.svg" alt="">
-            <h2 class="text-4xl font-[Plus Jakarta Sans , sans-serif] font-bold text-indigo-100 z-1">" Your Vision, Our Code "</h2>
+            <h2 class="text-4xl font-[var(--title-font)] font-bold text-indigo-100 z-1">
+                " Your Vision, Our Code "
+            </h2>
             <p class="text-xl font-medium text-gray-200 max-w-2xl z-1">
                 We design and build <span class="text-[var(--primary-color-light)]">clean</span>, <span class="text-[var(--primary-color-light)]">fast</span>, and <span class="text-[var(--primary-color-light)]">professional</span>
                 websites — Tailored for businesses that want to stand out 
                 <span class="text-[var(--secondary-color)]">online</span>.
             </p>
             <div class="flex ">
-                <a class="text-xl font-medium py-3 px-10 rounded-l-4xl rounded-r-lg bg-[var(--primary-color)] text-white mx-2 transition duration-300 ease-out hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" href="">Let's Work Together</a>
-                <a class="text-xl font-medium py-3 px-10 rounded-4xl rounded-l-lg backdrop-blur-sm border border-indigo-500/50 text-white mx-2 transition duration-300 ease-out hover:text-[var(--primary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" href="">Check Our Services</a> 
+                <a href="" class="text-xl font-medium py-3 px-10 rounded-l-4xl rounded-r-lg bg-[var(--primary-color)] text-white mx-2 
+                    transition duration-300 ease-out hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
+                    Let's Work Together
+                </a>
+                <a href="" class="text-xl font-medium py-3 px-10 rounded-4xl rounded-l-lg backdrop-blur-sm border border-indigo-500/50 text-white mx-2 
+                    transition duration-300 ease-out hover:text-[var(--primary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
+                    Check Our Services
+                </a> 
             </div>
             
 
@@ -54,6 +67,107 @@
     </main>
 
     <!--hero section-->
+
+    <!--services section-->
+    <section id="services" class="min-h-[calc(100vh-70px)]">
+
+            <div class="max-w-screen-xl mx-auto py-20">
+
+                <h2 class="text-4xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-10">
+                    Our Services
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <div class="flex flex-col justify-center items-center text-center bg-white/80 backdrop-blur-sm custom-radius border-2 border-[var(--primary-color)]/70 p-8 pb-4 shadow-lg 
+                        transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-2">
+                        <i  class="fa-solid fa-basket-shopping text-white text-6xl mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30"></i>
+                        <h3 class="text-2xl font-semibold mb-2">
+                            Landing Pages
+                        </h3>
+                        <p class="text-gray-700 max-w-xl mb-8">
+                            Custom websites built with clean code, optimized for performance and SEO.
+                        </p>
+                        <a href="" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
+                            transition-all duration-300 ease-in-out hover:bg-[var(--secondary-color)] hover:px-7 hover:tracking-wider hover:shadow-xl ">
+                            Start Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center text-center bg-white/80 backdrop-blur-sm custom-radius border-2 border-[var(--primary-color)]/70 p-6 pb-4 shadow-lg 
+                        transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-2">
+                        <i class="fa-regular fa-id-badge text-white text-6xl mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30"></i>
+                        <h3 class="text-2xl font-semibold mb-2">
+                            Personal Portfolios
+                        </h3>
+                        <p class="text-gray-700 max-w-xl mb-8">
+                            Intuitive and visually stunning designs that enhance user experience.
+                        </p>
+                        <a href="" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
+                            transition-all duration-300 ease-in-out hover:bg-[var(--secondary-color)] hover:px-7 hover:tracking-wider hover:shadow-xl">
+                            Start Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center text-center bg-white/80 backdrop-blur-sm custom-radius border-2 border-[var(--primary-color)]/70 p-8 pb-4 shadow-lg 
+                        transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-2">
+                        <i class="fa-solid fa-object-group text-white text-6xl mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30"></i>
+                        <h3 class="text-2xl font-semibold mb-2">
+                            UI/UX Redesign
+                        </h3>
+                        <p class="text-gray-700 max-w-xl mb-8">
+                            Responsive designs that look great on all devices, ensuring a seamless experience.
+                        </p>
+                        <a href="" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
+                            transition-all duration-300 ease-out hover:bg-[var(--secondary-color)] hover:px-7 hover:tracking-wider hover:shadow-2xl">
+                            Start Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!--services section-->
+    <!--working plane section-->
+    <section>
+        <div class="max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto py-20">
+
+            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pt-15 relative">
+                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -top-15 left-20">1</h1>
+                <h3 class="text-2xl font-semibold mb-2">Discovery & Planning</h3>
+                <p class="text-gray-700 mb-4">
+                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
+                </p>
+            </div>
+
+            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pb-20 relative">
+                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -bottom-15 left-20">2</h1>
+                <h3 class="text-2xl font-semibold mb-2">UI/UX Design</h3>
+                <p class="text-gray-700 mb-4">
+                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
+                </p>
+            </div>
+
+            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pt-15 relative">
+                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -top-15 left-20">3</h1>
+                <h3 class="text-2xl font-semibold mb-2">Development & SEO</h3>
+                <p class="text-gray-700 mb-4">
+                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
+                </p>
+            </div>
+
+            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pb-20 relative">
+                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -bottom-15 left-20">4</h1>
+                <h3 class="text-2xl font-semibold mb-2">Launch & Support</h3>
+                <p class="text-gray-700 mb-4">
+                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <!--working plane section-->
 
 </body>
 </html>
