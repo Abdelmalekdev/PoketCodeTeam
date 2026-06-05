@@ -6,12 +6,12 @@
     <meta name="theme-color" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="poketicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>PoketCodeAgency</title>
 </head>
 
-<body>
+<body class="custom-bg">
 
     <!--navbar-->
     <header class="shadow-sm fixed w-full absolute bg-white/100 backdrop-blur-sm z-10 h-[71px] ">
@@ -69,17 +69,19 @@
     <!--hero section-->
 
     <!--services section-->
-    <section id="services" class="min-h-[calc(100vh-70px)]">
+    <section id="services">
 
-            <div class="max-w-screen-xl mx-auto py-20">
-
-                <h2 class="text-4xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-10">
-                    Our Services
-                </h2>
+            <div class="max-w-screen-xl mx-auto py-10">
+                <div class="mb-15 ">
+                    <h2 class="text-5xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-5">
+                        Our Services
+                    </h2>
+                    <hr class="border-none bg-[var(--secondary-color)] rounded-full h-[0.25rem] w-25 mx-auto mb-10 ">
+                </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-                    <div class="flex flex-col justify-center items-center text-center bg-white/80 backdrop-blur-sm custom-radius border-2 border-[var(--primary-color)]/70 p-8 pb-4 shadow-lg 
+                    <div class="flex flex-col justify-center items-center text-center bg-white/60 custom-radius border-2 border-[var(--primary-color)]/70 p-8 pb-4 shadow-lg 
                         transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-2">
                         <i  class="fa-solid fa-basket-shopping text-white text-6xl mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30"></i>
                         <h3 class="text-2xl font-semibold mb-2">
@@ -94,7 +96,7 @@
                         </a>
                     </div>
 
-                    <div class="flex flex-col justify-center items-center text-center bg-white/80 backdrop-blur-sm custom-radius border-2 border-[var(--primary-color)]/70 p-6 pb-4 shadow-lg 
+                    <div class="flex flex-col justify-center items-center text-center bg-white/60 custom-radius border-2 border-[var(--primary-color)]/70 p-6 pb-4 shadow-lg 
                         transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-2">
                         <i class="fa-regular fa-id-badge text-white text-6xl mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30"></i>
                         <h3 class="text-2xl font-semibold mb-2">
@@ -109,7 +111,7 @@
                         </a>
                     </div>
 
-                    <div class="flex flex-col justify-center items-center text-center bg-white/80 backdrop-blur-sm custom-radius border-2 border-[var(--primary-color)]/70 p-8 pb-4 shadow-lg 
+                    <div class="flex flex-col justify-center items-center text-center bg-white/60 custom-radius border-2 border-[var(--primary-color)]/70 p-8 pb-4 shadow-lg 
                         transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-2">
                         <i class="fa-solid fa-object-group text-white text-6xl mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30"></i>
                         <h3 class="text-2xl font-semibold mb-2">
@@ -130,41 +132,104 @@
     </section>
     <!--services section-->
     <!--working plane section-->
-    <section>
-        <div class="max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto py-20">
+    <section class="">
 
-            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pt-15 relative">
-                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -top-15 left-20">1</h1>
-                <h3 class="text-2xl font-semibold mb-2">Discovery & Planning</h3>
-                <p class="text-gray-700 mb-4">
-                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
-                </p>
+        <div class="max-w-screen-xl mx-auto py-10">
+            <div class="mb-20">
+                <h2 class="text-5xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-5">
+                    Our professional <span class="text-[var(--secondary-color)]">Work process</span>
+                </h2>
+                <hr class="border-none bg-[var(--secondary-color)] rounded-full h-[0.25rem] w-50 mx-auto">
             </div>
 
-            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pb-20 relative">
-                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -bottom-15 left-20">2</h1>
-                <h3 class="text-2xl font-semibold mb-2">UI/UX Design</h3>
-                <p class="text-gray-700 mb-4">
-                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
-                </p>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-6">
 
-            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pt-15 relative">
-                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -top-15 left-20">3</h1>
-                <h3 class="text-2xl font-semibold mb-2">Development & SEO</h3>
-                <p class="text-gray-700 mb-4">
-                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
-                </p>
-            </div>
+                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                    <h1 class="absolute fa-regular fa-compass border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                    
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">1</h1>
 
-            <div class="border-6 text-center border-[var(--primary-color)] bg-white/80 backdrop-blur-sm rounded-xl p-6 pb-20 relative">
-                <h1 class="absolute text-white text-6xl font-bold mb-4 bg-[var(--primary-color)] py-8 px-2 rounded-full w-30 h-30 -bottom-15 left-20">4</h1>
-                <h3 class="text-2xl font-semibold mb-2">Launch & Support</h3>
-                <p class="text-gray-700 mb-4">
-                    We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
-                </p>
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                        <h3 class="text-2xl font-semibold  mb-2">Planning</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-800 mb-4">
+                            We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                    <h1 class="absolute fa-solid fa-pen-ruler border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20  
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">2</h1> 
+
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                        <h3 class="text-2xl font-semibold  mb-2">UI/UX Design</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-800 mb-4">
+                            Our team crafts modern, visually stunning, and user-friendly wireframes and prototypes. We ensure the design aligns with your vision before writing a single line of code.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                    <h1 class="absolute fa-solid fa-laptop-code border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                   
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">3</h1> 
+
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                        <h3 class="text-2xl font-semibold  mb-2">Development</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-800 mb-4">
+                            We turn the approved designs into high-performing, responsive websites using clean code. Every page is fully optimized for speed, mobile devices, and SEO basics.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                    <h1 class="absolute fa-solid fa-rocket border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                    
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">4</h1> 
+
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                        <h3 class="text-2xl font-semibold  mb-2">Launch & Support</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-800 mb-4">
+                            After rigorous testing, we safely launch your site to the world. We also provide post-launch support to ensure everything runs smoothly and efficiently.
+                        </p>
+                    </div>
+
+                </div>
+                
             </div>
-            
+        
+
+            <div class="text-center mt-12">
+                <a href="#contact" class="border-2 border-[var(--primary-color)] bg-white/50 text-[var(--primary-color)] text-xl font-medium py-4 px-12 rounded-xl shadow-xl
+                    transition-all duration-300 hover:border-[var(--secondary-color)] hover:text-[var(--secondary-color)] hover:tracking-wider hover:px-14 hover:shadow-2xl">
+                    Start Your Project Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </section>
     <!--working plane section-->
