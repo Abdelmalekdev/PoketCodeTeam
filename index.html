@@ -13,6 +13,13 @@
 
 <body class="custom-bg">
 
+    <a href="#home">
+        <div class="fixed bottom-5 right-5 w-14 h-14 rounded-full bg-[var(--primary-color)]/90 text-white flex justify-center items-center text-2xl shadow-lg 
+            transition duration-300 hover:bg-[var(--secondary-color)] hover:transform-[scale(1.1)] hover:shadow-2xl z-10">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
+
     <!--navbar-->
     <header class="shadow-sm fixed w-full absolute bg-white/100 backdrop-blur-sm z-10 h-[71px] ">
         <nav class="flex justify-between items-center py-3 px-10 max-w-screen-xl mx-auto">
@@ -20,12 +27,12 @@
             <div class="flex gap-10 items-center">
                 <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#home">Home</a>
                 <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#services">Services</a>
-                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#projects">Projects</a>
-                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#about">About_Us</a>
+                <!--<a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#projects">Projects</a>-->
+                <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#contact">Contact-Us</a>
             </div>
             <a class="text-xl text-white py-2 px-8 rounded-full bg-[var(--primary-color)] 
-                transition duration-300 ease-out hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl" href="">
-                Contact_Us
+                transition duration-200 hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl" href="#contact">
+                Start-Your-Project
             </a>
         </nav>
     </header>
@@ -52,11 +59,11 @@
             </p>
             <div class="flex ">
                 <a href="" class="text-xl font-medium py-3 px-10 rounded-l-4xl rounded-r-lg bg-[var(--primary-color)] text-white mx-2 
-                    transition duration-300 ease-out hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
+                    transition duration-300 hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
                     Let's Work Together
                 </a>
-                <a href="" class="text-xl font-medium py-3 px-10 rounded-4xl rounded-l-lg backdrop-blur-sm border border-indigo-500/50 text-white mx-2 
-                    transition duration-300 ease-out hover:text-[var(--primary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
+                <a href="#services" class="text-xl font-medium py-3 px-10 rounded-4xl rounded-l-lg backdrop-blur-sm border border-indigo-500/50 text-white mx-2 
+                    transition duration-300 hover:text-[var(--primary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
                     Check Our Services
                 </a> 
             </div>
@@ -144,15 +151,15 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-6">
 
-                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
-                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
                     <h1 class="absolute fa-regular fa-compass border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
                     <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                    
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">1</h1>
 
-                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
-                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
                         <h3 class="text-2xl font-semibold  mb-2">Planning</h3>
                     </div>
                     <div class="p-6">
@@ -163,15 +170,15 @@
 
                 </div>
 
-                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
-                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
                     <h1 class="absolute fa-solid fa-pen-ruler border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
                     <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20  
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">2</h1> 
 
-                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
-                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
                         <h3 class="text-2xl font-semibold  mb-2">UI/UX Design</h3>
                     </div>
                     <div class="p-6">
@@ -182,15 +189,15 @@
 
                 </div>
 
-                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
-                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
                     <h1 class="absolute fa-solid fa-laptop-code border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
                     <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                   
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">3</h1> 
 
-                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
-                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
                         <h3 class="text-2xl font-semibold  mb-2">Development</h3>
                     </div>
                     <div class="p-6">
@@ -201,15 +208,15 @@
 
                 </div>
 
-                <div class=" group border-2 text-center border-[var(--primary-color)] bg-white/60 rounded-2xl  relative 
-                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]">
+                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                    transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
                     <h1 class="absolute fa-solid fa-rocket border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
                     <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                    
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">4</h1> 
 
-                    <div class="w-full bg-linear-to-b from-[var(--primary-color)] to-white/0 p-6 pt-16 rounded-t-xl
-                        transition duration-300 ease-in-out hover:bg-linear-to-b group-hover:from-[var(--secondary-color)] hover:to-white/0">
+                    <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
+                        transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
                         <h3 class="text-2xl font-semibold  mb-2">Launch & Support</h3>
                     </div>
                     <div class="p-6">
@@ -224,15 +231,210 @@
         
 
             <div class="text-center mt-12">
-                <a href="#contact" class="border-2 border-[var(--primary-color)] bg-white/50 text-[var(--primary-color)] text-xl font-medium py-4 px-12 rounded-xl shadow-xl
-                    transition-all duration-300 hover:border-[var(--secondary-color)] hover:text-[var(--secondary-color)] hover:tracking-wider hover:px-14 hover:shadow-2xl">
+                <a href="#contact" class="border-2 border-[var(--primary-color)]/70 bg-white/50 text-[var(--primary-color)] text-xl font-medium py-4 px-12 rounded-xl shadow-xl
+                    transition-all duration-300 hover:border-[var(--secondary-color)]/70 hover:text-[var(--secondary-color)] hover:tracking-wider hover:px-14 hover:shadow-2xl">
                     Start Your Project Now
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
+
         </div>
     </section>
     <!--working plane section-->
+
+    <!--contact form section-->
+    <section id="contact" class="py-20 px-6 bg-white/80">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+ 
+      <!-- Left: Contact Info -->
+      <div>
+        <p class="text-xs font-semibold tracking-widest uppercase text-[var(--primary-color)] mb-2">Get in touch</p>
+        <h2 class="text-3xl font-bold text-slate-900 leading-tight mb-4">Let's build something great</h2>
+        <p class="text-slate-500 text-sm leading-relaxed mb-8">
+          Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you as soon as possible.
+        </p>
+ 
+        <!-- Email -->
+        <div class="flex items-start gap-4 mb-6">
+          <div class="w-11 h-11 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-envelope text-[var(--primary-color)] text-lg"></i>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Email</p>
+            <p class="text-sm font-medium text-slate-800">contact@poketcode.dz</p>
+          </div>
+        </div>
+ 
+        <!-- Phone -->
+        <div class="flex items-start gap-4 mb-6">
+          <div class="w-11 h-11 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-phone text-[var(--primary-color)] text-lg"></i>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Phone</p>
+            <p class="text-sm font-medium text-slate-800">+213 XX XX XX XX</p>
+          </div>
+        </div>
+ 
+        <!-- Social Media -->
+        <div class="flex gap-3">
+          <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+            <i class="fa-brands fa-instagram text-base"></i>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+            <i class="fa-brands fa-linkedin text-base"></i>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+            <i class="fa-brands fa-github text-base"></i>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+          </a>
+        </div>
+      </div>
+ 
+      <!-- Right: Contact Form -->
+      <div>
+        <form action="https://formspree.io/f/YOUR_ID" method="POST" class="space-y-4">
+ 
+          <!-- Name & Email -->
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">Full Name</label>
+              <input type="text" name="Full Name" placeholder="John Doe" required
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-800 focus:outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 transition"/>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">Email</label>
+              <input type="email" name="Email" placeholder="john@email.com" required
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-800 focus:outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 transition"/>
+            </div>
+          </div>
+ 
+          <!-- Phone -->
+          <div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">Phone (optional)</label>
+              <input type="tel" name="Phone" placeholder="+213 XX XX XX XX"
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-800 focus:outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 transition"/>
+            </div>
+          </div>
+ 
+          <!-- Service -->
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">Service Needed</label>
+            <select name="Service Needed" required
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-800 focus:outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 transition appearance-none">
+              <option value="">Choose a service</option>
+              <option>Landing Pages</option>
+              <option>UI/UX Redesign</option>
+              <option>Portfolio Website</option>
+            </select>
+          </div>
+ 
+          <!-- Message -->
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">Project Details</label>
+            <textarea name="Project Details" rows="4" placeholder="Tell us about your project..." required
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-800 focus:outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 transition resize-none"></textarea>
+          </div>
+ 
+          <!-- Submit -->
+          <button type="submit"
+            class="w-full py-3 bg-[var(--primary-color)] text-white  text-xl rounded-full
+                transition-all duration-300 hover:bg-[var(--secondary-color)] hover:tracking-wider hover:shadow-lg ">
+            Send Message 
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+ 
+        </form>
+      </div>
+ 
+    </div>
+  </section>
+
+    <!--contact form section-->
+    <!--footer-->
+    <footer class="bg-[var(--dark-bg-color)]">
+        <div class="grid grid-cols-1 gap-y-4 max-w-screen-xl mx-auto p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-x-20">
+                <div>
+                    <img src="img/pcawordwb.svg" alt="" class="w-100 mb-6">
+                    <p class="text-[var(--decoration-color)] text-sm leading-relaxed mb-8">
+                        A creative team dedicated to crafting high-performance e-commerce landing pages, modern personal portfolios, and intuitive digital experiences tailored to scale your brand.
+                    </p>
+            
+                    <!-- Social Media -->
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+                            <i class="fa-brands fa-instagram text-base"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+                            <i class="fa-solid fa-envelope text-base"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+                            <i class="fa-brands fa-linkedin text-base"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+                            <i class="fa-brands fa-github text-base"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4 items-start">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold text-[var(--primary-color-light)] font-[var(--title-font)] mb-2">
+                            Quick Links
+                        </h2>
+                        <hr class="border-none bg-[var(--secondary-color)] rounded-full h-[0.15rem] w-15">
+                    </div>
+                    <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#home">Home</a>
+                    <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#services">Services</a>
+                    <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#projects">Projects</a>
+                    <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#about">About_Us</a>
+                </div>
+
+            </div>
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-[var(--primary-color-light)] font-[var(--title-font)] mb-2">
+                        Contact Us
+                    </h2>
+                    <hr class="border-none bg-[var(--secondary-color)] rounded-full h-[0.15rem] w-15">
+                </div>
+            <!-- Email -->
+             <div>
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-envelope text-[var(--primary-color)] text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Email</p>
+                        <p class="text-sm font-medium text-[var(--decoration-color)]">contact@poketcode.dz</p>
+                    </div>
+                </div>
+                
+                <!-- Phone -->
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-phone text-[var(--primary-color)] text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-1">Phone</p>
+                        <p class="text-sm font-medium text-[var(--decoration-color)]">+213 XX XX XX XX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w-full mx-auto py-6 text-center text-sm text-[var(--decoration-color)] border-t border-[var(--primary-color)]/50">
+            &copy; 2024 PoketCodeAgency. All rights reserved.
+        </div>
+    </footer>
+    <!--footer-->
+
 
 </body>
 </html>
