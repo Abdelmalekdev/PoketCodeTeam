@@ -21,56 +21,76 @@
     </a>
 
     <!--navbar-->
-    <header class="shadow-sm fixed w-full absolute bg-white/100 backdrop-blur-sm z-10 h-[71px] ">
-        <nav class="flex justify-between items-center py-3 px-10 max-w-screen-xl mx-auto">
-            <img class="w-22" src="img/pcawb.svg" alt="">
-            <div class="flex gap-10 items-center">
+    <header class="shadow-sm fixed w-full bg-white/100 backdrop-blur-sm z-10">
+        <nav class="flex justify-between items-center py-3 px-6 md:px-10 max-w-screen-xl mx-auto">
+            <img class="w-16 md:w-22" src="img/pcawb.svg" alt="">
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex gap-10 items-center">
                 <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#home">Home</a>
                 <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#services">Services</a>
-                <!--<a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#projects">Projects</a>-->
                 <a class="text-xl font-medium text-[var(--primary-color)] transition duration-300 hover:text-[var(--secondary-color)]" href="#contact">Contact-Us</a>
             </div>
-            <a class="text-xl text-white py-2 px-8 rounded-full bg-[var(--primary-color)] 
+            <a class="hidden lg:block text-xl text-white py-2 px-8 rounded-full bg-[var(--primary-color)] 
                 transition duration-200 hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl" href="#contact">
                 Start-Your-Project
             </a>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" onclick="toggleMenu()">
+                <span class="block w-6 h-0.5 bg-[var(--primary-color)] transition-all duration-300" id="bar1"></span>
+                <span class="block w-6 h-0.5 bg-[var(--primary-color)] transition-all duration-300" id="bar2"></span>
+                <span class="block w-6 h-0.5 bg-[var(--primary-color)] transition-all duration-300" id="bar3"></span>
+            </button>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden flex-col items-center gap-6 py-6 bg-white border-t border-gray-100 shadow-md">
+            <a class="text-xl font-medium text-[var(--primary-color)]" href="#home" onclick="toggleMenu()">Home</a>
+            <a class="text-xl font-medium text-[var(--primary-color)]" href="#services" onclick="toggleMenu()">Services</a>
+            <a class="text-xl font-medium text-[var(--primary-color)]" href="#contact" onclick="toggleMenu()">Contact-Us</a>
+            <a class="text-lg text-white py-2 px-8 rounded-full bg-[var(--primary-color)]" href="#contact" onclick="toggleMenu()">Start Your Project</a>
+        </div>
     </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+    </script>
     <!--navbar-->
 
     <!--hero section-->
-    <main id="home" class="bg-indigo-950 bg-[url('img/labtop.jpg')] bg-cover h-screen bg-blend-multiply">
-        <div class="h-[70px] opacity-0"></div>
-        <div class="h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center gap-4 relative">
-            <div class="absolute w-100 h-100 bg-[var(--decoration-color)]/30 rounded-full top-0 left-50 z-0 blur-[10rem]"></div>
-            <div class="absolute w-60 h-60 bg-[var(--decoration-color)]/70 rounded-full bottom-0 right-100 z-0 blur-[10rem] "></div>
+    <main id="home" class="bg-indigo-950 bg-[url('img/labtop.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply w-full" style="min-height: 100dvh;">
+        <div class="w-full flex flex-col justify-center items-center text-center gap-4 relative px-6 pt-28 pb-16" style="min-height: 100dvh;">
+            <div class="absolute md:w-100 md:h-100 bg-[var(--decoration-color)]/30 rounded-full top-0 left-50 z-0 blur-[10rem]"></div>
+            <div class="absolute md:w-60 md:h-60 bg-[var(--decoration-color)]/70 rounded-full bottom-0 right-100 z-0 blur-[10rem]"></div>
 
-            <h2 class="text-xl font-medium text-indigo-100 bg-indigo-950/60 border-2 border-indigo-950 px-3 py-1 rounded-full mb-4 z-1">
+            <h2 class="text-sm md:text-xl font-medium text-indigo-100 bg-indigo-950/60 border-2 border-indigo-950 px-3 py-1 rounded-full mb-4 z-1">
                 <i class="fa-solid fa-code"></i> Web Development Agency
             </h2>
-            <img class="w-200 z-1" src="img/pcawordbbb.svg" alt="">
-            <h2 class="text-4xl font-[var(--title-font)] font-bold text-indigo-100 z-1">
+            <img class="w-[80vw] max-w-[700px] z-1" src="img/pcawordbbb.svg" alt="">
+            <h2 class="text-2xl md:text-4xl font-[var(--title-font)] font-bold text-indigo-100 z-1">
                 " Your Vision, Our Code "
             </h2>
-            <p class="text-xl font-medium text-gray-200 max-w-2xl z-1">
+            <p class="text-base md:text-xl font-medium text-gray-200 max-w-2xl z-1">
                 We design and build <span class="text-[var(--primary-color-light)]">clean</span>, <span class="text-[var(--primary-color-light)]">fast</span>, and <span class="text-[var(--primary-color-light)]">professional</span>
                 websites — Tailored for businesses that want to stand out 
                 <span class="text-[var(--secondary-color)]">online</span>.
             </p>
-            <div class="flex ">
-                <a href="" class="text-xl font-medium py-3 px-10 rounded-l-4xl rounded-r-lg bg-[var(--primary-color)] text-white mx-2 
-                    transition duration-300 hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
+            <div class="flex flex-col sm:flex-row gap-3 z-1">
+                <a href="#contact" class="text-base md:text-xl font-medium py-3 px-8 rounded-l-full rounded-r-lg bg-[var(--primary-color)] text-white
+                    transition duration-300 hover:bg-[var(--secondary-color)] hover:transform-[scale(1.05)] hover:shadow-xl">
                     Let's Work Together
                 </a>
-                <a href="#services" class="text-xl font-medium py-3 px-10 rounded-4xl rounded-l-lg backdrop-blur-sm border border-indigo-500/50 text-white mx-2 
-                    transition duration-300 hover:text-[var(--primary-color)] hover:transform-[scale(1.05)] hover:shadow-xl z-1" >
+                <a href="#services" class="text-base md:text-xl font-medium py-3 px-8 rounded-full rounded-l-lg backdrop-blur-sm border border-indigo-500/50 text-white
+                    transition duration-300 hover:text-[var(--primary-color)] hover:transform-[scale(1.05)] hover:shadow-xl">
                     Check Our Services
                 </a> 
             </div>
-            
-
         </div>
-
     </main>
 
     <!--hero section-->
@@ -78,9 +98,9 @@
     <!--services section-->
     <section id="services">
 
-            <div class="max-w-screen-xl mx-auto py-10">
+            <div class="max-w-screen-xl mx-auto py-10 px-6">
                 <div class="mb-15 ">
-                    <h2 class="text-5xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-5">
+                    <h2 class="text-3xl md:text-5xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-5">
                         Our Services
                     </h2>
                     <hr class="border-none bg-[var(--secondary-color)] rounded-full h-[0.25rem] w-25 mx-auto mb-10 ">
@@ -97,7 +117,7 @@
                         <p class="text-gray-700 max-w-xl mb-8">
                             Custom websites built with clean code, optimized for performance and SEO.
                         </p>
-                        <a href="" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
+                        <a href="#contact" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
                             transition-all duration-300 ease-in-out hover:bg-[var(--secondary-color)] hover:px-7 hover:tracking-wider hover:shadow-xl ">
                             Start Now <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -112,7 +132,7 @@
                         <p class="text-gray-700 max-w-xl mb-8">
                             Intuitive and visually stunning designs that enhance user experience.
                         </p>
-                        <a href="" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
+                        <a href="#contact" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
                             transition-all duration-300 ease-in-out hover:bg-[var(--secondary-color)] hover:px-7 hover:tracking-wider hover:shadow-xl">
                             Start Now <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -127,7 +147,7 @@
                         <p class="text-gray-700 max-w-xl mb-8">
                             Responsive designs that look great on all devices, ensuring a seamless experience.
                         </p>
-                        <a href="" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
+                        <a href="#contact" class="text-md text-[var(--primary-color)] self-start font-medium mt-auto bg-[var(--primary-color)] text-white py-1 px-6 custom-radius 
                             transition-all duration-300 ease-out hover:bg-[var(--secondary-color)] hover:px-7 hover:tracking-wider hover:shadow-2xl">
                             Start Now <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -141,98 +161,91 @@
     <!--working plane section-->
     <section class="">
 
-        <div class="max-w-screen-xl mx-auto py-10">
+        <div class="max-w-screen-xl mx-auto py-10 px-6">
             <div class="mb-20">
-                <h2 class="text-5xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-5">
+                <h2 class="text-3xl md:text-5xl font-bold text-center text-[var(--primary-color)] font-[var(--title-font)] mb-5">
                     Our professional <span class="text-[var(--secondary-color)]">Work process</span>
                 </h2>
                 <hr class="border-none bg-[var(--secondary-color)] rounded-full h-[0.25rem] w-50 mx-auto">
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-6 mt-16">
 
-                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                <div class="group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl relative 
                     transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
-                    <h1 class="absolute fa-regular fa-compass border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                    <h1 class="absolute fa-regular fa-compass border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
-                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                    
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">1</h1>
-
                     <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
                         transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
-                        <h3 class="text-2xl font-semibold  mb-2">Planning</h3>
+                        <h3 class="text-2xl font-semibold mb-2">Planning</h3>
                     </div>
                     <div class="p-6">
                         <p class="text-gray-800 mb-4">
                             We collaborate closely with you to understand your vision, goals, and target audience. This phase involves brainstorming, wireframing, and creating a roadmap for the project.
                         </p>
                     </div>
-
                 </div>
 
-                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                <div class="group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl relative 
                     transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
-                    <h1 class="absolute fa-solid fa-pen-ruler border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                    <h1 class="absolute fa-solid fa-pen-ruler border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
-                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20  
-                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">2</h1> 
-
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">2</h1>
                     <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
                         transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
-                        <h3 class="text-2xl font-semibold  mb-2">UI/UX Design</h3>
+                        <h3 class="text-2xl font-semibold mb-2">UI/UX Design</h3>
                     </div>
                     <div class="p-6">
                         <p class="text-gray-800 mb-4">
                             Our team crafts modern, visually stunning, and user-friendly wireframes and prototypes. We ensure the design aligns with your vision before writing a single line of code.
                         </p>
                     </div>
-
                 </div>
 
-                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                <div class="group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl relative 
                     transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
-                    <h1 class="absolute fa-solid fa-laptop-code border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                    <h1 class="absolute fa-solid fa-laptop-code border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
-                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                   
-                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">3</h1> 
-
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">3</h1>
                     <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
                         transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
-                        <h3 class="text-2xl font-semibold  mb-2">Development</h3>
+                        <h3 class="text-2xl font-semibold mb-2">Development</h3>
                     </div>
                     <div class="p-6">
                         <p class="text-gray-800 mb-4">
                             We turn the approved designs into high-performing, responsive websites using clean code. Every page is fully optimized for speed, mobile devices, and SEO basics.
                         </p>
                     </div>
-
                 </div>
 
-                <div class=" group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl  relative 
+                <div class="group border-2 text-center border-[var(--primary-color)]/70 bg-white/60 rounded-2xl relative 
                     transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-4 hover:border-[var(--secondary-color)]/70">
-                    <h1 class="absolute fa-solid fa-rocket border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-20 
+                    <h1 class="absolute fa-solid fa-rocket border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white rotate-90 py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
                         transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:border-[var(--secondary-color)]/20 group-hover:rotate-0"></h1>
-                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-20                    
-                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">4</h1> 
-
+                    <h1 class="absolute border-2 border-[var(--primary-color)]/20 text-6xl font-bold mb-4 text-[var(--primary-color)] bg-white py-8 px-2 rounded-full w-30 h-30 -top-15 left-1/2 -translate-x-1/2 lg:left-20 lg:translate-x-0
+                        transition-all duration-300 ease-out group-hover:text-[var(--secondary-color)] group-hover:rotate-180 group-hover:opacity-0">4</h1>
                     <div class="w-full bg-linear-to-b from-[var(--primary-color)]/70 to-white/0 p-6 pt-16 rounded-t-xl
                         transition duration-300 ease-in-out group-hover:bg-linear-to-b group-hover:from-[var(--secondary-color)]/70 group-hover:to-white/0">
-                        <h3 class="text-2xl font-semibold  mb-2">Launch & Support</h3>
+                        <h3 class="text-2xl font-semibold mb-2">Launch & Support</h3>
                     </div>
                     <div class="p-6">
                         <p class="text-gray-800 mb-4">
                             After rigorous testing, we safely launch your site to the world. We also provide post-launch support to ensure everything runs smoothly and efficiently.
                         </p>
                     </div>
-
                 </div>
                 
             </div>
         
 
             <div class="text-center mt-12">
-                <a href="#contact" class="border-2 border-[var(--primary-color)]/70 bg-white/50 text-[var(--primary-color)] text-xl font-medium py-4 px-12 rounded-xl shadow-xl
-                    transition-all duration-300 hover:border-[var(--secondary-color)]/70 hover:text-[var(--secondary-color)] hover:tracking-wider hover:px-14 hover:shadow-2xl">
+                <a href="#contact" class="border-2 border-[var(--primary-color)]/70 bg-white/50 text-[var(--primary-color)] text-xs font-medium py-4 px-12 rounded-xl shadow-xl 
+                    transition-all duration-300 hover:border-[var(--secondary-color)]/70 hover:text-[var(--secondary-color)] hover:tracking-wider hover:px-14 hover:shadow-2xl
+                    md:text-xl">
                     Start Your Project Now
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -278,7 +291,7 @@
  
         <!-- Social Media -->
         <div class="flex gap-3">
-          <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+          <a href="https://www.instagram.com/poketcode_agency/" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
             <i class="fa-brands fa-instagram text-base"></i>
           </a>
           <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
@@ -298,7 +311,7 @@
         <form action="https://formspree.io/f/YOUR_ID" method="POST" class="space-y-4">
  
           <!-- Name & Email -->
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">Full Name</label>
               <input type="text" name="Full Name" placeholder="John Doe" required
@@ -356,17 +369,17 @@
     <!--contact form section-->
     <!--footer-->
     <footer class="bg-[var(--dark-bg-color)]">
-        <div class="grid grid-cols-1 gap-y-4 max-w-screen-xl mx-auto p-12">
+        <div class="grid grid-cols-1 gap-y-4 max-w-screen-xl mx-auto p-8 md:p-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-x-20">
                 <div>
-                    <img src="img/pcawordwb.svg" alt="" class="w-100 mb-6">
+                    <img src="img/pcawordwb.svg" alt="" class="w-48 md:w-100 mb-6">
                     <p class="text-[var(--decoration-color)] text-sm leading-relaxed mb-8">
                         A creative team dedicated to crafting high-performance e-commerce landing pages, modern personal portfolios, and intuitive digital experiences tailored to scale your brand.
                     </p>
             
                     <!-- Social Media -->
                     <div class="flex gap-3">
-                        <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
+                        <a href="https://www.instagram.com/poketcode_agency/" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
                             <i class="fa-brands fa-instagram text-base"></i>
                         </a>
                         <a href="#" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-[var(--primary-color)] hover:border-[var(--primary-color)] hover:text-white transition duration-300">
@@ -393,8 +406,8 @@
                     </div>
                     <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#home">Home</a>
                     <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#services">Services</a>
-                    <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#projects">Projects</a>
-                    <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#about">About_Us</a>
+                    <!--<a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#projects">Projects</a>-->
+                    <a class="text-xl font-medium text-[var(--decoration-color)] transition duration-300 hover:text-[var(--primary-color)]" href="#contact">Contact_Us</a>
                 </div>
 
             </div>
@@ -429,7 +442,8 @@
             </div>
         </div>
         
-        <div class="w-full mx-auto py-6 text-center text-sm text-[var(--decoration-color)] border-t border-[var(--primary-color)]/50">
+        <div class="w-full mx-auto py-6 text-center text-xs text-[var(--decoration-color)] border-t border-[var(--primary-color)]/50
+            md:text-sm">
             &copy; 2024 PoketCodeAgency. All rights reserved.
         </div>
     </footer>
