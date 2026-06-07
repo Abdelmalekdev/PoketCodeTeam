@@ -21,6 +21,13 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+
 body{
     margin: 0;
     padding: 0;
