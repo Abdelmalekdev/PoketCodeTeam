@@ -3,6 +3,7 @@
 
 @theme{
     --default-font: 'Montserrat', sans-serif;
+    --title-font: 'Plus Jakarta Sans', sans-serif;
 }
 
 :root{
@@ -23,8 +24,6 @@
 }
 
 html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch;
 }
 
